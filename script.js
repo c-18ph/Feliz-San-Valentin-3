@@ -109,9 +109,9 @@ function drawText() {
         context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
 
         if (window.innerWidth < 600) {           
-            drawTextWithLineBreaks(["FELIZ SAN VALENTIN AMOOOR <3, necesito apachurrate crj"], canvas.width / 2, canvas.height / 2, fontSize, lineHeight);
+            drawTextWithLineBreaks(["FELIZ SAN VALENTIN MI AMOOOR <3, necesito apachurrate crj"], canvas.width / 2, canvas.height / 2, fontSize, lineHeight);
         } else {
-            context.fillText("FELIZ SAN VALENTIN AMOOOR <3, necesito apachurrate crj", canvas.width/2, canvas.height/2);
+            context.fillText("FELIZ SAN VALENTIN MI AMOOOR <3, necesito apachurrate crj", canvas.width/2, canvas.height/2);
         }
 
         opacity = opacity + 0.01;
