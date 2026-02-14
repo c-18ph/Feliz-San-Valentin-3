@@ -51,12 +51,12 @@ function updateStars() {
 const button = document.getElementById("valentinesButton");
 
 button.addEventListener("click", () => {
-  if (button.textContent === "Click Me! ❤") {
-    button.textContent = "loading...";
+  if (button.textContent === "Presiona :p") {
+    button.textContent = "Cargando...";
     fetch('send_mail.php')
       .then(response => {
         if (response.ok) {
-          button.textContent = "Check Your Email 🙃";
+          button.textContent = "Si. <3";
         } else {
           console.error('Failed to send email');
           button.textContent = "Error 😞";
@@ -91,13 +91,13 @@ function drawText() {
 
     if(frameNumber < 250){
         context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
-        context.fillText("everyday day I cannot believe how lucky I am", canvas.width/2, canvas.height/2);
+        context.fillText("Hola cariño JASJ <3", canvas.width/2, canvas.height/2);
         opacity = opacity + 0.01;
     }
     //fades out the text by decreasing the opacity
     if(frameNumber >= 250 && frameNumber < 500){
         context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
-        context.fillText("everyday day I cannot believe how lucky I am", canvas.width/2, canvas.height/2);
+        context.fillText("Hola cariño JASJ <3", canvas.width/2, canvas.height/2);
         opacity = opacity - 0.01;
     }
 
@@ -108,10 +108,10 @@ function drawText() {
     if(frameNumber > 500 && frameNumber < 750){
         context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
 
-        if (window.innerWidth < 600) {           //shortens long sentence for mobile screens
-            drawTextWithLineBreaks(["amongst trillions and trillions of stars,", "over billions of years"], canvas.width / 2, canvas.height / 2, fontSize, lineHeight);
+        if (window.innerWidth < 600) {           
+            drawTextWithLineBreaks(["FELIZ SAN VALENTIN AMOOOR <3, necesito apachurrate crj"], canvas.width / 2, canvas.height / 2, fontSize, lineHeight);
         } else {
-            context.fillText("amongst trillions and trillions of stars, over billions of years", canvas.width/2, canvas.height/2);
+            context.fillText("FELIZ SAN VALENTIN AMOOOR <3, necesito apachurrate crj", canvas.width/2, canvas.height/2);
         }
 
         opacity = opacity + 0.01;
@@ -120,9 +120,9 @@ function drawText() {
         context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
         
         if (window.innerWidth < 600) {
-            drawTextWithLineBreaks(["amongst trillions and trillions of stars,", "over billions of years"], canvas.width / 2, canvas.height / 2, fontSize, lineHeight);
+            drawTextWithLineBreaks(["FELIZ SAN VALENTIN AMOOOR <3, necesito apachurrate crj"], canvas.width / 2, canvas.height / 2, fontSize, lineHeight);
         } else {
-            context.fillText("amongst trillions and trillions of stars, over billions of years", canvas.width/2, canvas.height/2);
+            context.fillText("FELIZ SAN VALENTIN AMOOOR <3, necesito apachurrate crj, canvas.width/2, canvas.height/2);
         }
 
         opacity = opacity - 0.01;
@@ -133,12 +133,12 @@ function drawText() {
     }
     if(frameNumber > 1000 && frameNumber < 1250){
         context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
-        context.fillText("to be alive, and to get to spend this life with you", canvas.width/2, canvas.height/2);
+        context.fillText("Muchisimas gracias por todo lo que haces mi amor", canvas.width/2, canvas.height/2);
         opacity = opacity + 0.01;
     }
     if(frameNumber >= 1250 && frameNumber < 1500){
         context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
-        context.fillText("to be alive, and to get to spend this life with you", canvas.width/2, canvas.height/2);
+        context.fillText("Muchisimas gracias por todo lo que haces mi amor", canvas.width/2, canvas.height/2);
         opacity = opacity - 0.01;
     }
 
@@ -147,12 +147,12 @@ function drawText() {
     }
     if(frameNumber > 1500 && frameNumber < 1750){
         context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
-        context.fillText("is so incredibly, unfathomably unlikely", canvas.width/2, canvas.height/2);
+        context.fillText("Eres lo mejor, y siempre lo seras cariño", canvas.width/2, canvas.height/2);
         opacity = opacity + 0.01;
     }
     if(frameNumber >= 1750 && frameNumber < 2000){
         context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
-        context.fillText("is so incredibly, unfathomably unlikely", canvas.width/2, canvas.height/2);
+        context.fillText("Eres lo mejor, y siempre lo seras cariño", canvas.width/2, canvas.height/2);
         opacity = opacity - 0.01;
     }
 
@@ -163,9 +163,9 @@ function drawText() {
         context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
 
         if (window.innerWidth < 600) {
-            drawTextWithLineBreaks(["and yet here I am to get the impossible", "chance to get to know you"], canvas.width / 2, canvas.height / 2, fontSize, lineHeight);
+            drawTextWithLineBreaks(["Gracias por siempre estar a mi lado amor"], canvas.width / 2, canvas.height / 2, fontSize, lineHeight);
         } else {
-            context.fillText("and yet here I am to get the impossible chance to get to know you", canvas.width/2, canvas.height/2);
+            context.fillText("Gracias por siempre estar a mi lado amor", canvas.width/2, canvas.height/2);
         }
 
         opacity = opacity + 0.01;
@@ -174,9 +174,9 @@ function drawText() {
         context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
 
         if (window.innerWidth < 600) {
-            drawTextWithLineBreaks(["and yet here I am to get the impossible", "chance to get to know you"], canvas.width / 2, canvas.height / 2, fontSize, lineHeight);
+            drawTextWithLineBreaks(["y por siempre elegir amarme un dia mas mi amor"], canvas.width / 2, canvas.height / 2, fontSize, lineHeight);
         } else {
-            context.fillText("and yet here I am to get the impossible chance to get to know you", canvas.width/2, canvas.height/2);
+            context.fillText("y por siempre elegir amarme un dia mas mi amor", canvas.width/2, canvas.height/2);
         }
         
         opacity = opacity - 0.01;
@@ -189,9 +189,9 @@ function drawText() {
         context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
 
         if (window.innerWidth < 600) {
-            drawTextWithLineBreaks(["I love you so much {name}, more than", "all the time and space in the universe can contain"], canvas.width / 2, canvas.height / 2, fontSize, lineHeight);
+            drawTextWithLineBreaks(["Te amo infinitamente demasiado mi amor, te amo con absolutamente todo mi ser <3"], canvas.width / 2, canvas.height / 2, fontSize, lineHeight);
         } else {
-            context.fillText("I love you so much {name}, more than all the time and space in the universe can contain", canvas.width/2, canvas.height/2);
+            context.fillText("Te amo infinitamente demasiado mi amor, te amo con absolutamente todo mi ser <3", canvas.width/2, canvas.height/2);
         }
 
         opacity = opacity + 0.01;
@@ -202,9 +202,9 @@ function drawText() {
 
 
         if (window.innerWidth < 600) {
-            drawTextWithLineBreaks(["and I can't wait to spend all the time in", "the world to share that love with you!"], canvas.width / 2, (canvas.height/2 + 60), fontSize, lineHeight);
+            drawTextWithLineBreaks(["¿Te gustaria ser mi San Valentin mi amor?"], canvas.width / 2, (canvas.height/2 + 60), fontSize, lineHeight);
         } else {
-            context.fillText("and I can't wait to spend all the time in the world to share that love with you!", canvas.width/2, (canvas.height/2 + 50));
+            context.fillText("¿Te gustaria ser mi San Valentin mi amor?", canvas.width/2, (canvas.height/2 + 50));
         }
 
         secondOpacity = secondOpacity + 0.01;
@@ -212,7 +212,7 @@ function drawText() {
 
     if(frameNumber >= 3000 && frameNumber < 99999){
         context.fillStyle = `rgba(45, 45, 255, ${thirdOpacity})`;
-        context.fillText("Happy Valentine's Day <3", canvas.width/2, (canvas.height/2 + 120));
+        context.fillText("Feliz San Valentin cariño <3", canvas.width/2, (canvas.height/2 + 120));
         thirdOpacity = thirdOpacity + 0.01;
 
         button.style.display = "block";
